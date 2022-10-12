@@ -94,6 +94,7 @@ namespace fnw
 		};
 
 	public:
+		function() = default;
 
 		function(const function&) = delete;
 		function& operator=(const function&) = delete;
