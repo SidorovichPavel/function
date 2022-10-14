@@ -1,5 +1,11 @@
 #pragma once
 
+/*
+* RayeS
+* class - callable object wraper
+* version 1.3.0
+*/
+
 #include <type_traits>
 #include <memory>
 #include <stdexcept>
@@ -94,7 +100,10 @@ namespace fnw
 		};
 
 	public:
-		function() = default;
+		function(nullptr_t _Ptr = nullptr)
+			:
+			mStorage{0}
+		{}
 
 		function(const function&) = delete;
 		function& operator=(const function&) = delete;

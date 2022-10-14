@@ -35,6 +35,8 @@ int main()
 {
 	fnw::function<int(int, int)> fn([](int a, int b) {return a + b; });
 
+	fnw::function<void()> fn_null(nullptr);
+
 	std::cout << fn(4, 5) << std::endl;
 
 	return 0;
